@@ -11,13 +11,17 @@
       <div class='title-two'> Guesser </div>
     </div>
     
+    <div class='error'>
+      <div class='error-message'>
+    </div>
+    
     <div class='input-field'>
-      <input class='input' id='guess_number' placeholder='Enter your guess'></input>
+      <input class='input' id='guess_number' placeholder='Enter your guess' onkeyup='numbersOnly(this)'></input>
     </div>
     
     <div class='buttons'>
-      <button type='submit' class='guess'>Guess</button>
-      <button type='reset' class='clear'>Clear</button>
+      <button type='submit' class='guess' disabled='true'>Guess</button>
+      <button type='reset' class='clear' disabled='true'>Clear</button>
     </div>
     
     <div class='recent-guess-container'>
