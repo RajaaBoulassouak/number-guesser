@@ -11,12 +11,20 @@
       <div class='title-two'> Guesser </div>
     </div>
     
-    <div class='error'>
-      <div class='error-message'>
+    <div class='range'>
+      <input class='min' placeholder='Enter a range minimum' onkeyup='numbersOnly(this)'></input>
+      <input class='max' placeholder='Enter a range maximum' onkeyup='numbersOnly(this)'></input>
     </div>
     
+    <div class='set-range'>
+      <button type='submit' class='set'>Set Range</button>
+    </div>
+    
+    <div class='range-message'></div>
+    <div class='error-message'></div>
+  
     <div class='input-field'>
-      <input class='input' id='guess_number' placeholder='Enter your guess' onkeyup='numbersOnly(this)'></input>
+      <input class='input' placeholder='Enter your guess' onkeyup='numbersOnly(this)'></input>
     </div>
     
     <div class='buttons'>
