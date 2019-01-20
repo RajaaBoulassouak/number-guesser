@@ -30,7 +30,7 @@ The user can keep guessing until the correct number is guessed. Once the user gu
 
 ## Getting started
 
-Clone this repository via git clone git@github.com:RajaaBoulassouak/number-guesser.git in the CLI.
+Clone this repository via `git clone git@github.com:RajaaBoulassouak/number-guesser.git` in the CLI.
 In the CLI run 'open index html'
 
 Have fun!
