@@ -1,5 +1,7 @@
 # Number-Guesser
 
+See the deployed version at  https://rajaaboulassouak.github.io/number-guesser/
+
 ## What is it?
 
 Nummber Guesser is a game which generates a random number that the user can guess. It first requires the user to select a desired range from which they can guess the random number from. Only numerical and non-negative values are accepted. 
