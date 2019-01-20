@@ -136,6 +136,8 @@ function resetGame() {
   maximum.value = ''
   // set user's recent guess to be empty
   input.value = ''
+  // set range error message to be empty
+  errorMessage.innerHTML = ''
   // set guessing result info messages to be empty
   itWas.innerHTML = ''
   recentGuess.innerHTML = ''
