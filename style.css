@@ -9,6 +9,7 @@ body {
   margin-top: 0;
   font-size: 5em;
 }
+
 .title-one {
   color: #ED458B;
   font-weight: 700;
@@ -18,6 +19,12 @@ body {
 .title-two {
   color: #E6E7E8;
   display: inline;
+}
+
+.intro {
+  margin-top: 1em;
+  font-size: 1.5em;
+  font-weight: 320;
 }
 
 .min {
@@ -117,3 +124,4 @@ button.reset {
   width: 26.5em;
   margin-top: 2.5em;
 }
+

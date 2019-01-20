@@ -80,6 +80,7 @@ function resetGame() {
   minimum.value = ''
   maximum.value = ''
   input.value = ''
+  errorMessage.innerHTML = ''
   itWas.innerHTML = ''
   recentGuess.innerHTML = ''
   message.innerHTML = ''
