@@ -24,14 +24,17 @@ function setNumber() {
 }
 
 function setNewNumber() {
-  if (minimum.value > 10)
+  var maxim = parseInt(maximum.value);
+  if (minimum.value > 10) {
     minimum.value -= 10;
-  else {
+    maxim += 10;
+  } else {
     minimum.value = 1;
+    maxim += 20;
   }
   var min = minimum.value;
-  var maxim = parseInt(maximum.value);
-  var max = maxim += 10;
+  var max = maxim
+  document.querySelector('.min').value = min;
   document.querySelector('.max').value = max;
   randomNumber = Math.floor(Math.random() * (max - min + 1) + min);
 }
