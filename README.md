@@ -28,6 +28,14 @@ The user can keep guessing until the correct number is guessed. Once the user gu
 
 ![](images/Screen%20Shot%202019-01-20%20at%201.33.28%20PM.png)
 
+## Getting started
+
+Clone this repository via git clone git@github.com:RajaaBoulassouak/number-guesser.git in the CLI.
+In the CLI run 'open index html'
+
+Have fun!
+
+
 
 
 
