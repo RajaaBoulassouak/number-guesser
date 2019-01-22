@@ -1,5 +1,7 @@
 # Number-Guesser
 
+See the deployed version at  https://rajaaboulassouak.github.io/number-guesser/
+
 ## What is it?
 
 Nummber Guesser is a game which generates a random number that the user can guess. It first requires the user to select a desired range from which they can guess the random number from. Only numerical and non-negative values are accepted. 
@@ -30,7 +32,8 @@ The user can keep guessing until the correct number is guessed. Once the user gu
 
 ## Getting started
 
-Clone this repository via git clone git@github.com:RajaaBoulassouak/number-guesser.git in the CLI.
+Clone this repository via `git clone git@github.com:RajaaBoulassouak/number-guesser.git` in the CLI.
+
 In the CLI run 'open index html'
 
 Have fun!
