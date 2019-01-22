@@ -24,33 +24,35 @@ function setNumber() {
 }
 
 function setNewNumber() {
+  var minim = parseInt(minimum.value);
   var maxim = parseInt(maximum.value);
-  if (minimum.value > 10) {
-    minimum.value -= 10;
+  if (minim > 10) {
+    minim -= 10;
+    maxim += 10;
+  } else if (minim < 11 && minim > 1) {
+    minim = 1;
     maxim += 10;
   } else {
-    minimum.value = 1;
     maxim += 20;
   }
-  var min = minimum.value;
+  var min = minim
   var max = maxim
-  document.querySelector('.min').value = min;
-  document.querySelector('.max').value = max;
+  document.querySelector('.min').value = minim;
+  document.querySelector('.max').value = maxim;
   randomNumber = Math.floor(Math.random() * (max - min + 1) + min);
 }
 
 function checkGuess() {
-  var guess = input.value
-  if (guess < minimum.value || guess > maximum.value) 
+  if (parseInt(input.value) < minimum.value || parseInt(input.value) > maximum.value) 
     errorMessage.innerHTML = "Your entry is not within range. Please press 'Clear' and try again.";
   else {
     itWas.innerHTML = 'Your last guess was';
-    recentGuess.innerHTML = guess;
-    if (guess == randomNumber) {
+    recentGuess.innerHTML = parseInt(input.value);
+    if (parseInt(input.value) == randomNumber) {
       message.innerHTML = 'BOOM!';
       setNewNumber();
       rangeMessage.innerHTML = `Range is now ${minimum.value} - ${maximum.value}`
-    } else if (guess > randomNumber) {
+    } else if (parseInt(input.value) > randomNumber) {
       message.innerHTML = 'That is too high!';
     } else {
       message.innerHTML = 'That is too low!';
@@ -70,7 +72,7 @@ function checkFieldEmpty() {
 
 input.addEventListener('keyup', function (event) {
   checkFieldEmpty(event.target.value);
-  });
+});
 
 function clearInputField() {
   input.value = '';
